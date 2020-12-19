@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.gameTitle {
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: purple;
+}
+
+.darkmode {
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  border-radius: 25px;
+  padding: 3px 13px;
+  background-color: white;
+  border: 1px solid #ddd9d9;
+}
+
+.darkmode:focus {
+  outline: none;
+}
+
+.darkmodeClass {
+  background-color: #070e0e;
+  color: white;
+}
+
+.darkmodeClass .gameTitle {
+  color: purple;
+}
+
+.darkmodeClass #select, .darkmodeClass .computerInpt {
+  background-color: dimgrey;
+  color: white;
+}
+
+.gamePlay {
+  border: 1px solid #ddd9d9;
+  margin: 30px auto;
+  width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 2px;
+}
+
+.title {
+  text-align: center;
+}
+
+details {
+  margin-bottom: 10px;
+  padding: 5px 40px;
+}
+
+summary {
+  color: #f10a0a;
+}
+
+summary:focus {
+  outline: none;
+}
+
+.howto {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0568816e;
+}
+
+.playAgain {
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 8px;
+  width: 200px;
+  cursor: pointer;
+  background-color: indianred;
+  color: white;
+  text-transform: uppercase;
+}
+
+.human, .computer {
+  width: 45%;
+}
+
+#select, .computerInpt {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd9d9;
+}
+
+.scoreUpdates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.col-box {
+  border: 1px solid #ddd9d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.players {
+  font-size: 28px;
+}
+
+.score-box {
+  margin-bottom: 5px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+
+.description {
+  height: 1px;
+  width: 100%;
+  background-color: red;
+}
+
+.footer p {
+  text-align: center;
+  padding: 6px;
+}
+
+.winner {
+  background-color: #4dec4d;
+  margin-top: 8px;
+  color: white;
+  font-weight: bold;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.winner .score-box {
+  font-size: 55px;
+  color: green;
+}
+
+.winner .players::after {
+  content: ' wins🏆🥇';
+}
+
+@media (max-width: 780px) {
+  .gameTitle {
+    font-size: 15px;
+  }
+  .darkmode {
+    top: 46px;
+    padding: 3px 8px;
+    font-size: 10px;
+  }
+  .howto {
+    font-size: 10px;
+  }
+  .gamePlay {
+    width: 80%;
+    padding: 10px 8px;
+  }
+  .title {
+    font-size: 13px;
+  }
+  #select, .computerInpt {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .col-box {
+    width: 100px;
+  }
+  .playAgain {
+    padding: 10px;
+  }
+  .col-box p {
+    font-size: 16px;
+  }
+  .winner {
+    margin: 10px;
+  }
+  .winner .score-box {
+    font-size: 20px;
+    color: green;
+  }
+  .winner .players {
+    font-size: 13px;
+  }
+  .description {
+    width: 90%;
+    margin: auto;
+  }
+  .footer {
+    padding: 0;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
